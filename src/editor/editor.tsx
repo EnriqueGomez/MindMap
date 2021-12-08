@@ -326,7 +326,7 @@ class Editor extends React.Component<Editor_Props, Editor_State>
         }
         if (set_state)
         {
-            console.log("Setting State")
+            //console.log("Setting State")
             this.setState( () => ( {mind_node_anchor_collection: cur_anchor_collection} ) );
         }
     }
@@ -354,7 +354,7 @@ class Editor extends React.Component<Editor_Props, Editor_State>
         const cur_mm_collection = this.state.mind_node_collection
         if (cur_mm_collection.has(this.state.selected_mind_node_id))
         {
-            console.log("Deleting Mind Map")
+            //console.log("Deleting Mind Map")
             const selected_mm = cur_mm_collection.get(this.state.selected_mind_node_id)!
             this.clearMindMapReferences(this.state.selected_mind_node_id, cur_mm_collection, cur_anchor_collection)
             cur_anchor_collection.delete(selected_mm.anchor_octet.a1_id)
@@ -366,8 +366,8 @@ class Editor extends React.Component<Editor_Props, Editor_State>
             cur_anchor_collection.delete(selected_mm.anchor_octet.a7_id)
             cur_anchor_collection.delete(selected_mm.anchor_octet.a8_id)
             cur_mm_collection.delete(this.state.selected_mind_node_id);
-            console.log("MindMap size after delete: ", cur_mm_collection.size)
-            console.log("Anchor size after delete: ", cur_anchor_collection.size)
+            //console.log("MindMap size after delete: ", cur_mm_collection.size)
+            //console.log("Anchor size after delete: ", cur_anchor_collection.size)
             this.clearSelection()
             this.setState( () => ( {mind_node_anchor_collection: cur_anchor_collection,
                                     mind_node_collection: cur_mm_collection
@@ -375,7 +375,7 @@ class Editor extends React.Component<Editor_Props, Editor_State>
         }
         else if (cur_anchor_collection.has(this.state.selected_anchor_id))
         {
-            console.log("Deleting Anchor")
+            //console.log("Deleting Anchor")
             this.clearAnchorReferences(this.state.selected_anchor_id, cur_anchor_collection);
             cur_anchor_collection.delete(this.state.selected_anchor_id);
             this.clearSelection()
@@ -777,7 +777,7 @@ class Editor extends React.Component<Editor_Props, Editor_State>
     
     //When triggered sets the state that allows an arrow to be drawn - potentially conecting to another anchor
     activateAnchor_Down:Function = (anchor_id:number, event:React.PointerEvent<HTMLDivElement>) => {
-        console.log("activateAnchor")
+        //console.log("activateAnchor")
         event.stopPropagation();
         event.preventDefault();
 
@@ -1023,7 +1023,7 @@ class Editor extends React.Component<Editor_Props, Editor_State>
     get_file_name = (event:any) => {
         if (event.target.files.length > 0)
         {
-            console.log(event.target.files[0]);
+            //console.log(event.target.files[0]);
         }
     }
 
@@ -1319,7 +1319,7 @@ class Editor extends React.Component<Editor_Props, Editor_State>
                 <Card border="primary" text="light" className="center_menu">
                     <Card.Header><CloseButton onClick={this.toggle_md_panels}/>
                     {
-                        this.state.mind_node_anchor_collection.has(this.state.selected_mind_node_id)?
+                        this.state.mind_node_collection.has(this.state.selected_mind_node_id)?
                         <strong className="text-dark">{this.state.mind_node_collection.get(this.state.selected_mind_node_id)!.node_text}</strong>:<></>
                     }
                     </Card.Header>
