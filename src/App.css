@@ -1,0 +1,533 @@
+html{
+    height: 100vh; 
+}
+
+body{
+    background-color: orange;
+    height:100%
+}
+
+#root{
+    background-color: orange;
+    height:100%
+}
+
+.left_menu{
+    position: absolute;
+    width: 15%;
+    top: 56px;
+    bottom: 56px;
+    left:0px;
+}
+
+
+.right_menu{
+    position: absolute;
+    width: 15%;
+    top: 56px;
+    bottom: 56px;
+    right:0px;
+}
+
+.right_menu_md{
+    position: absolute;
+    width: 15%;
+    height:100%;
+    right:0px;
+    border-radius: 0 !important;
+}
+
+.left_menu_md{
+    position: absolute;
+    width: 15%;
+    height:100%;
+    border-radius: 0 !important
+}
+
+.center_menu{
+    position: absolute;
+    width: 70%;
+    right: 15%;
+    height:100%;
+    overflow-y: auto;
+    border-radius: 0 !important
+}
+
+.non_resizable{
+    resize: none;
+}
+
+@keyframes slidein{
+    from{
+        background-color: rgb(23, 23, 24);
+        top:100%;
+    }
+    to{
+        background-color: antiquewhite;
+        top: 56px;
+    }
+}
+
+@keyframes slideout{
+    from{
+        background-color: antiquewhite;
+        top: 56px;
+    }
+    to{
+        background-color: rgb(23, 23, 24);
+        top: 100%;
+    }
+}
+
+.out_frame_start
+{
+    overflow: hidden;
+    top:100%;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    bottom: 56px;
+    background-color: black;
+}
+
+.out_frame{
+    transition: top 2s;
+    overflow: hidden;
+    top:100%;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    bottom: 56px;
+    background-color: black;
+}
+
+.in_frame{
+    transition: top 2s;
+    overflow: hidden;
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    top: 56px;
+    bottom: 56px;
+    background-color: antiquewhite;
+}
+
+.markdown_text_area{
+  width: 100%;
+  resize: none;
+  box-sizing: border-box;
+}
+
+.markdown_render_preview{
+    word-break: keep-all;
+    text-align: justify;
+}
+.markdown_render_preview img{
+    max-width: 50%;
+    max-height: 50%;
+    float: left;
+}
+.markdown_render_preview img[alt="0%"]{
+    max-width: 0%;
+    max-height: 0%;
+}
+.markdown_render_preview img[alt="1%"]{
+    max-width: 1%;
+    max-height: 1%;
+}
+.markdown_render_preview img[alt="2%"]{
+    max-width: 2%;
+    max-height: 2%;
+}
+.markdown_render_preview img[alt="3%"]{
+    max-width: 3%;
+    max-height: 3%;
+}
+.markdown_render_preview img[alt="4%"]{
+    max-width: 4%;
+    max-height: 4%;
+}
+.markdown_render_preview img[alt="5%"]{
+    max-width: 5%;
+    max-height: 5%;
+}
+.markdown_render_preview img[alt="6%"]{
+    max-width: 6%;
+    max-height: 6%;
+}
+.markdown_render_preview img[alt="7%"]{
+    max-width: 7%;
+    max-height: 7%;
+}
+.markdown_render_preview img[alt="8%"]{
+    max-width: 8%;
+    max-height: 8%;
+}
+.markdown_render_preview img[alt="9%"]{
+    max-width: 9%;
+    max-height: 9%;
+}
+.markdown_render_preview img[alt="10%"]{
+    max-width: 10%;
+    max-height: 10%;
+}
+.markdown_render_preview img[alt="11%"]{
+    max-width: 11%;
+    max-height: 11%;
+}
+.markdown_render_preview img[alt="12%"]{
+    max-width: 12%;
+    max-height: 12%;
+}
+.markdown_render_preview img[alt="13%"]{
+    max-width: 13%;
+    max-height: 13%;
+}
+.markdown_render_preview img[alt="14%"]{
+    max-width: 14%;
+    max-height: 14%;
+}
+.markdown_render_preview img[alt="15%"]{
+    max-width: 15%;
+    max-height: 15%;
+}
+.markdown_render_preview img[alt="16%"]{
+    max-width: 16%;
+    max-height: 16%;
+}
+.markdown_render_preview img[alt="17%"]{
+    max-width: 17%;
+    max-height: 17%;
+}
+.markdown_render_preview img[alt="18%"]{
+    max-width: 18%;
+    max-height: 18%;
+}
+.markdown_render_preview img[alt="19%"]{
+    max-width: 19%;
+    max-height: 19%;
+}
+.markdown_render_preview img[alt="20%"]{
+    max-width: 20%;
+    max-height: 20%;
+}
+.markdown_render_preview img[alt="21%"]{
+    max-width: 21%;
+    max-height: 21%;
+}
+.markdown_render_preview img[alt="22%"]{
+    max-width: 22%;
+    max-height: 22%;
+}
+.markdown_render_preview img[alt="23%"]{
+    max-width: 23%;
+    max-height: 23%;
+}
+.markdown_render_preview img[alt="24%"]{
+    max-width: 24%;
+    max-height: 24%;
+}
+.markdown_render_preview img[alt="25%"]{
+    max-width: 25%;
+    max-height: 25%;
+}
+.markdown_render_preview img[alt="26%"]{
+    max-width: 26%;
+    max-height: 26%;
+}
+.markdown_render_preview img[alt="27%"]{
+    max-width: 27%;
+    max-height: 27%;
+}
+.markdown_render_preview img[alt="28%"]{
+    max-width: 28%;
+    max-height: 28%;
+}
+.markdown_render_preview img[alt="29%"]{
+    max-width: 29%;
+    max-height: 29%;
+}
+.markdown_render_preview img[alt="30%"]{
+    max-width: 30%;
+    max-height: 30%;
+}
+.markdown_render_preview img[alt="31%"]{
+    max-width: 31%;
+    max-height: 31%;
+}
+.markdown_render_preview img[alt="32%"]{
+    max-width: 32%;
+    max-height: 32%;
+}
+.markdown_render_preview img[alt="33%"]{
+    max-width: 33%;
+    max-height: 33%;
+}
+.markdown_render_preview img[alt="34%"]{
+    max-width: 34%;
+    max-height: 34%;
+}
+.markdown_render_preview img[alt="35%"]{
+    max-width: 35%;
+    max-height: 35%;
+}
+.markdown_render_preview img[alt="36%"]{
+    max-width: 36%;
+    max-height: 36%;
+}
+.markdown_render_preview img[alt="37%"]{
+    max-width: 37%;
+    max-height: 37%;
+}
+.markdown_render_preview img[alt="38%"]{
+    max-width: 38%;
+    max-height: 38%;
+}
+.markdown_render_preview img[alt="39%"]{
+    max-width: 39%;
+    max-height: 39%;
+}
+.markdown_render_preview img[alt="40%"]{
+    max-width: 40%;
+    max-height: 40%;
+}
+.markdown_render_preview img[alt="41%"]{
+    max-width: 41%;
+    max-height: 41%;
+}
+.markdown_render_preview img[alt="42%"]{
+    max-width: 42%;
+    max-height: 42%;
+}
+.markdown_render_preview img[alt="43%"]{
+    max-width: 43%;
+    max-height: 43%;
+}
+.markdown_render_preview img[alt="44%"]{
+    max-width: 44%;
+    max-height: 44%;
+}
+.markdown_render_preview img[alt="45%"]{
+    max-width: 45%;
+    max-height: 45%;
+}
+.markdown_render_preview img[alt="46%"]{
+    max-width: 46%;
+    max-height: 46%;
+}
+.markdown_render_preview img[alt="47%"]{
+    max-width: 47%;
+    max-height: 47%;
+}
+.markdown_render_preview img[alt="48%"]{
+    max-width: 48%;
+    max-height: 48%;
+}
+.markdown_render_preview img[alt="49%"]{
+    max-width: 49%;
+    max-height: 49%;
+}
+.markdown_render_preview img[alt="50%"]{
+    max-width: 50%;
+    max-height: 50%;
+}
+.markdown_render_preview img[alt="51%"]{
+    max-width: 51%;
+    max-height: 51%;
+}
+.markdown_render_preview img[alt="52%"]{
+    max-width: 52%;
+    max-height: 52%;
+}
+.markdown_render_preview img[alt="53%"]{
+    max-width: 53%;
+    max-height: 53%;
+}
+.markdown_render_preview img[alt="54%"]{
+    max-width: 54%;
+    max-height: 54%;
+}
+.markdown_render_preview img[alt="55%"]{
+    max-width: 55%;
+    max-height: 55%;
+}
+.markdown_render_preview img[alt="56%"]{
+    max-width: 56%;
+    max-height: 56%;
+}
+.markdown_render_preview img[alt="57%"]{
+    max-width: 57%;
+    max-height: 57%;
+}
+.markdown_render_preview img[alt="58%"]{
+    max-width: 58%;
+    max-height: 58%;
+}
+.markdown_render_preview img[alt="59%"]{
+    max-width: 59%;
+    max-height: 59%;
+}
+.markdown_render_preview img[alt="60%"]{
+    max-width: 60%;
+    max-height: 60%;
+}
+.markdown_render_preview img[alt="61%"]{
+    max-width: 61%;
+    max-height: 61%;
+}
+.markdown_render_preview img[alt="62%"]{
+    max-width: 62%;
+    max-height: 62%;
+}
+.markdown_render_preview img[alt="63%"]{
+    max-width: 63%;
+    max-height: 63%;
+}
+.markdown_render_preview img[alt="64%"]{
+    max-width: 64%;
+    max-height: 64%;
+}
+.markdown_render_preview img[alt="65%"]{
+    max-width: 65%;
+    max-height: 65%;
+}
+.markdown_render_preview img[alt="66%"]{
+    max-width: 66%;
+    max-height: 66%;
+}
+.markdown_render_preview img[alt="67%"]{
+    max-width: 67%;
+    max-height: 67%;
+}
+.markdown_render_preview img[alt="68%"]{
+    max-width: 68%;
+    max-height: 68%;
+}
+.markdown_render_preview img[alt="69%"]{
+    max-width: 69%;
+    max-height: 69%;
+}
+.markdown_render_preview img[alt="70%"]{
+    max-width: 70%;
+    max-height: 70%;
+}
+.markdown_render_preview img[alt="71%"]{
+    max-width: 71%;
+    max-height: 71%;
+}
+.markdown_render_preview img[alt="72%"]{
+    max-width: 72%;
+    max-height: 72%;
+}
+.markdown_render_preview img[alt="73%"]{
+    max-width: 73%;
+    max-height: 73%;
+}
+.markdown_render_preview img[alt="74%"]{
+    max-width: 74%;
+    max-height: 74%;
+}
+.markdown_render_preview img[alt="75%"]{
+    max-width: 75%;
+    max-height: 75%;
+}
+.markdown_render_preview img[alt="76%"]{
+    max-width: 76%;
+    max-height: 76%;
+}
+.markdown_render_preview img[alt="77%"]{
+    max-width: 77%;
+    max-height: 77%;
+}
+.markdown_render_preview img[alt="78%"]{
+    max-width: 78%;
+    max-height: 78%;
+}
+.markdown_render_preview img[alt="79%"]{
+    max-width: 79%;
+    max-height: 79%;
+}
+.markdown_render_preview img[alt="80%"]{
+    max-width: 80%;
+    max-height: 80%;
+}
+.markdown_render_preview img[alt="81%"]{
+    max-width: 81%;
+    max-height: 81%;
+}
+.markdown_render_preview img[alt="82%"]{
+    max-width: 82%;
+    max-height: 82%;
+}
+.markdown_render_preview img[alt="83%"]{
+    max-width: 83%;
+    max-height: 83%;
+}
+.markdown_render_preview img[alt="84%"]{
+    max-width: 84%;
+    max-height: 84%;
+}
+.markdown_render_preview img[alt="85%"]{
+    max-width: 85%;
+    max-height: 85%;
+}
+.markdown_render_preview img[alt="86%"]{
+    max-width: 86%;
+    max-height: 86%;
+}
+.markdown_render_preview img[alt="87%"]{
+    max-width: 87%;
+    max-height: 87%;
+}
+.markdown_render_preview img[alt="88%"]{
+    max-width: 88%;
+    max-height: 88%;
+}
+.markdown_render_preview img[alt="89%"]{
+    max-width: 89%;
+    max-height: 89%;
+}
+.markdown_render_preview img[alt="90%"]{
+    max-width: 90%;
+    max-height: 90%;
+}
+.markdown_render_preview img[alt="91%"]{
+    max-width: 91%;
+    max-height: 91%;
+}
+.markdown_render_preview img[alt="92%"]{
+    max-width: 92%;
+    max-height: 92%;
+}
+.markdown_render_preview img[alt="93%"]{
+    max-width: 93%;
+    max-height: 93%;
+}
+.markdown_render_preview img[alt="94%"]{
+    max-width: 94%;
+    max-height: 94%;
+}
+.markdown_render_preview img[alt="95%"]{
+    max-width: 95%;
+    max-height: 95%;
+}
+.markdown_render_preview img[alt="96%"]{
+    max-width: 96%;
+    max-height: 96%;
+}
+.markdown_render_preview img[alt="97%"]{
+    max-width: 97%;
+    max-height: 97%;
+}
+.markdown_render_preview img[alt="98%"]{
+    max-width: 98%;
+    max-height: 98%;
+}
+.markdown_render_preview img[alt="99%"]{
+    max-width: 99%;
+    max-height: 99%;
+}
+.markdown_render_preview img[alt="100%"]{
+    max-width: 100%;
+    max-height: 100%;
+}
